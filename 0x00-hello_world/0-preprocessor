@@ -1,3 +1,2 @@
 #!/bin/bash
-CFILE="prepocessor.c"
-cpp $CFILE > c
+CFILE="prepocessor.c"; cpp $CFILE > c
