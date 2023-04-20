@@ -1,0 +1,3 @@
+#!/bin/bash
+CFILE="prepocessor.c"
+cpp $CFILE > c
