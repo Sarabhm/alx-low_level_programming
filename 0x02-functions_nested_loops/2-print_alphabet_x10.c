@@ -10,6 +10,7 @@ void print_alphabet_x10(void)
 	char j = 'a';/* enter j for alphaets */
 		while (i < 10)
 		{
+			j = 'a';
 			while (j <= 'z')
 			{
 			_putchar(j);/* printing all alphabets */
