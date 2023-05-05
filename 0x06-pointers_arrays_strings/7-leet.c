@@ -11,7 +11,7 @@ char *leet(char *s)
 	i = 0;
 
 	char *let = "aAeEoOtTlL";
-	char num [] = {4, 4, 3, 3, 0, 0, 7, 7, 1, 1};
+	char *num = "4433007711";
 
 	while (*(s + i) != '\0')
 	{
