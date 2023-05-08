@@ -1,15 +1,15 @@
 #include "main.h"
 /**
- * _memcpy - function that copies a string
+ * _memcpy - function that copies a memory area
  * @dest: copy
  * @src: source
  * @n: number of bytes
  * Return: pointer to dest
  */
-char *_memcpy(char *dest, char *src, int n)
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	int a = 0;
-	int b = 0;
+	unsigned int a = 0;
+	unsigned int b = 0;
 
 	while (*(src + a) != '\0' && a < n)
 	{
@@ -18,6 +18,10 @@ char *_memcpy(char *dest, char *src, int n)
 	for (b = 0; b < a; b++)
 	{
 		*(dest + b) = *(src + b);
+	}
+	while (a < n)
+	{
+		*(dest + a) = '\0';
 	}
 	return (dest);
 }
