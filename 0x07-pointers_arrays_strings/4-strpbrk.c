@@ -3,16 +3,14 @@
 /**
  * _strpbrk - Searches a s in any if accept
  * @s: String
- *
  * @accept: Accpetance bytes
- *
  * Return: Character
  */
 
 char *_strpbrk(char *s, char *accept)
 {
-	int i, j;
-		i = 0;
+	int j;
+
 	while (*s != '\0')
 	{
 		j = 0;
