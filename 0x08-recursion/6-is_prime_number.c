@@ -10,8 +10,10 @@ int is_prime_number(int n)
 	if (n <= 1)
 	{
 		return (0);
-		return (real_prime_number(n, 2));
 	}
+	return (real_prime_number(n, 2));
+}
+
 /**
  * real_prime_number - calculates if n is prime recursively
  * @n: int to test
