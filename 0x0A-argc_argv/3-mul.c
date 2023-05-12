@@ -31,17 +31,15 @@ int _atoi(char *s)
 	int i = 1;
 	int res = 0;
 
-    if (*s == '-')
-    {
-        i = -1;
-        s++;
-    }
-
-    while (*s)
-    {
-        res = res * 10 + (*s - '0');
-        s++;
-    }
-
-    return (i * res);
+	if (*s == '-')
+	{
+		i = -1;
+		s++;
+	}
+	while (*s)
+	{
+		res = res * 10 + (*s - '0');
+		s++;
+	}
+	return (i * res);
 }
