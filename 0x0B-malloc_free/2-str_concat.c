@@ -36,10 +36,17 @@ char *str_concat(char *s1, char *s2)
 
 	cop = con;
 	while (*s1)
-		*cop = *s1++;
+	{
+		*cop = *s1;
+		cop++;
+		s1++;
+	}
 	while (*s2)
-		*cop++ = *s2++;
-	*cop = 0;
-
+	{
+		*cop = *s2;
+		cop++;
+		s2++;
+	}
+	*cop = '\0';
 	return (con);
 }
