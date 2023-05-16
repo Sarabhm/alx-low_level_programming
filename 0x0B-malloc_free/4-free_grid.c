@@ -3,7 +3,7 @@
 
 /**
  * free_grid - function frees 2 dimensional grid.
- * @grid: multidimensional array of integers.
+ * @grid: 2D array of integers.
  * @height: toul of the grid.
  * Return: nothing
  */

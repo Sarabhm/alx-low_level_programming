@@ -12,19 +12,20 @@
  */
 void print_grid(int **grid, int width, int height)
 {
-    int w;
-    int h;
+	int a;
+	int b;
 
-    h = 0;
-    while (h < height)
-    {
-        w = 0;
-        while (w < width)
-        {
-            printf("%d ", grid[h][w]);
-            w++;
-        }
-        printf("\n");
-        h++;
-    }   
+	b = 0;
+
+	while (b < height)
+	{
+		a = 0;
+		while (a < width)
+		{
+			printf("%d ", grid[b][a]);
+			a++;
+		}
+		printf("\n");
+		b++;
+	}
 }
